@@ -3,5 +3,5 @@ class Application
     resp = Rack::Response.new
     now = Time.now
     if now <= 12
-      Rack.write
+      resp.write
 end
